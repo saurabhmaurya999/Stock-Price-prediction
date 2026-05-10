@@ -13,6 +13,4 @@ threadpoolctl==3.6.0
 Werkzeug==3.1.5
 <<<<<<< HEAD
 gunicorn
-=======
 
->>>>>>> a6b664cd5b86620fd841c3506922f24a716c0208
