@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stock Prediction App</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Stock Price Predictor</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="text"
+               name="open_close"
+               placeholder="Open-Close"
+               required>
+
+        <input type="text"
+               name="high_low"
+               placeholder="High-Low"
+               required>
+
+        <input type="text"
+               name="is_quarter_end"
+               placeholder="Is Quarter End (0 or 1)"
+               required>
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+</html>
